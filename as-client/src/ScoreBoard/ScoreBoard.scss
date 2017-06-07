@@ -1,0 +1,27 @@
+@import "../helper.scss";
+
+.header-title {
+  font-family: 'Railway', 'sans-serif';
+  font-weight: bold;
+}
+
+.board {
+  position: relative;
+  height: 1000px;
+  border: 1px solid #dddddd;
+}
+.rank-card {
+  @include box_shadow(1);
+
+  height: 80px;
+  left: 5px;
+  right: 5px;
+
+  padding: 5px;
+
+  position: absolute;
+
+  transition: all 1s ease-in;
+
+  background-color: white;
+}
