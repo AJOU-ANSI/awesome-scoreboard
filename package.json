@@ -7,8 +7,8 @@
   "author": "Taewoo Kim <xodn4195@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "cross-env ENV=production go run main.go",
-    "dev": "cross-env ENV=development go run main.go",
+    "start": "cross-env GO_ENV=production go run main.go",
+    "dev": "cross-env GO_ENV=development go run main.go",
     "clean:client": "rimraf ./public/ && mkdirp ./public",
     "build:client": "cd as-client && yarn install && yarn build && ncp build/ ../public"
   },

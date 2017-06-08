@@ -13,7 +13,7 @@ const(
 )
 
 func main() {
-  ENV := os.Getenv("ENV")
+  ENV := os.Getenv("GO_ENV")
 
   e := echo.New()
   e.Pre(AddTrailingSlash())
