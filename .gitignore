@@ -107,3 +107,7 @@ $RECYCLE.BIN/
 .glide/
 
 .idea/
+vendor/
+public/
+
+node_modules
