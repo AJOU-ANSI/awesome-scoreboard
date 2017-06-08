@@ -5,6 +5,7 @@ import (
 	. "github.com/labstack/echo/middleware"
   "os"
   "awesome-scoreboard/controller"
+  "fmt"
 )
 
 const(
@@ -20,9 +21,11 @@ func main() {
 
   switch ENV {
   case PROD_ENV:
+    fmt.Println("Ready for production mode")
     e.Use(Recover())
 
   case DEV_ENV:
+    fmt.Println("Ready for development mode")
     e.Debug = true
     e.Use(Logger())
   }
